@@ -596,6 +596,7 @@ color: rgb(213, 213, 213);
   vertical-align: middle;
   color: white;
   padding-left: 50px;
+  z-index: 1;
 }
 .left-slide h1{
   font-size: 30px;
