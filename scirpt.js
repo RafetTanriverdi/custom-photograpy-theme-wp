@@ -4,17 +4,7 @@ let sidebar = document.querySelector(".sidebar");
 let icon = document.querySelector(".bx-menu");
 
 
-const sliderContainer =document.querySelector('.slider-container');
 
-const slideRight =document.querySelector('.right-slide');
-const slideLeft =document.querySelector('.left-slide');
-
-const upButton =document.querySelector('.up-button');
-const downButton =document.querySelector('.down-button');
-
-const slidesLength =slideLeft.querySelectorAll('div').length;
-
-let activeSlideIndex=0;
 
 
 
@@ -32,7 +22,17 @@ function offSidebar(){
     btn.classList.replace("bx-x","bx-menu");
 }
 
+const sliderContainer =document.querySelector('.slider-container');
 
+const slideRight =document.querySelector('.right-slide');
+const slideLeft =document.querySelector('.left-slide');
+
+const upButton =document.querySelector('.up-button');
+const downButton =document.querySelector('.down-button');
+
+const slidesLength =slideLeft.querySelectorAll('div').length;
+
+let activeSlideIndex=0;
 
 slideLeft.style.top =`-${(slidesLength-1)*100}vh`;
 //add event linerter to the buttons
