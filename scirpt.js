@@ -4,6 +4,19 @@ let sidebar = document.querySelector(".sidebar");
 let icon = document.querySelector(".bx-menu");
 
 
+const sliderContainer =document.querySelector('.slider-container');
+
+const slideRight =document.querySelector('.right-slide');
+const slideLeft =document.querySelector('.left-slide');
+
+const upButton =document.querySelector('.up-button');
+const downButton =document.querySelector('.down-button');
+
+const slidesLength =slideLeft.querySelectorAll('div').length;
+
+let activeSlideIndex=0;
+
+
 
 btnM.addEventListener('click', () => {
     sidebar.classList.toggle('mobile-active');
@@ -20,17 +33,6 @@ function offSidebar(){
 }
 
 
-const sliderContainer =document.querySelector('.slider-container');
-
-const slideRight =document.querySelector('.right-slide');
-const slideLeft =document.querySelector('.left-slide');
-
-const upButton =document.querySelector('.up-button');
-const downButton =document.querySelector('.down-button');
-
-const slidesLength =slideLeft.querySelectorAll('div').length;
-
-let activeSlideIndex=0;
 
 slideLeft.style.top =`-${(slidesLength-1)*100}vh`;
 //add event linerter to the buttons
@@ -124,3 +126,4 @@ document.getElementById("vertical-slider").onmouseout = function() {
         isPaused = false;
     }
 }
+;
